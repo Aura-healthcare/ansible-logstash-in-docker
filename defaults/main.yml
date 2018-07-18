@@ -5,6 +5,8 @@ logstash_container_name: "logstash"
 logstash_root_location: "/opt/docker-data/{{ logstash_container_name }}"
 logstash_conf_location: "{{ logstash_root_location }}/conf"
 logstash_data_location: "{{ logstash_root_location }}/data"
+logstash_data_container_location: "/home/logstash/data"
+
 
 logstash_docker_networks: []
 #logstash_docker_networks:

@@ -19,5 +19,5 @@
     restart_policy: "{{ logstash_container_restart_policy }}"
     volumes:
       - "{{ logstash_conf_location }}/logstash.conf:/usr/share/logstash/pipeline/logstash.conf"
-      - "{{ logstash_data_location }}:/home/logstash/data"
+      - "{{ logstash_data_location }}:{{logstash_data_container_location}}"
 
