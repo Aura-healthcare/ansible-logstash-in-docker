@@ -12,14 +12,11 @@ Requirements
 
 The following packages have to be installed and well configured on the host :
 - [Docker-ce](https://docs.docker.com/engine/installation/)
--
+
 
 ```
 License
 -------
 
 MIT
-
-Author Information
-------------------
 
