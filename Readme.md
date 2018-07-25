@@ -18,7 +18,5 @@ The following packages have to be installed and well configured on the host :
 License
 -------
 
-
-
 MIT
 
