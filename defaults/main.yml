@@ -1,9 +1,13 @@
 ---
 
+#conf file of logstash to use in string format
+#logstash_conf_file_content: "{{ lookup('template', 'logstash.conf.j2') }}"
+
 logstash_container_name: "logstash"
 
 logstash_root_location: "/opt/docker-data/{{ logstash_container_name }}"
 logstash_conf_location: "{{ logstash_root_location }}/conf"
+logstash_conf_file: "{{ logstash_conf_location }}/logstash.conf"
 logstash_data_location: "{{ logstash_root_location }}/data"
 logstash_data_container_location: "/home/logstash/data"
 

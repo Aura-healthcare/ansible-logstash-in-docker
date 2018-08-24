@@ -10,4 +10,10 @@
     - "{{ logstash_conf_location }}"
     - "{{ logstash_data_location }}"
 
+- name: write conf file
+  become: true
+  copy:
+    content: "{{ logstash_conf_file_content }}"
+    dest: "{{ logstash_conf_file }}"
+
 - include_tasks: run_container.yml
